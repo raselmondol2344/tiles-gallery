@@ -27,7 +27,7 @@
     "id": "tile_003",
     "title": "Wood Finish Porcelain Tile",
     "description": "Wood-look porcelain tile for modern interiors",
-    "image": "https://images.unsplash.com/photo-1582582494700-6a6d56d1c5a2",
+    "image": "https://simpolo-web.s3.ap-south-1.amazonaws.com/uploads/media/blog/Porcelain-Bathroom-Tiles.jpg",
     "category": "porcelain",
     "price": 55.00,
     "currency": "USD",
@@ -51,7 +51,7 @@
     "id": "tile_005",
     "title": "Black Matte Tile",
     "description": "Minimalist matte black floor tile",
-    "image": "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
+    "image": "https://images.unsplash.com/photo-1708540084677-dc5838b37627",
     "category": "ceramic",
     "price": 52.75,
     "currency": "USD",
@@ -63,7 +63,7 @@
     "id": "tile_006",
     "title": "Patterned Moroccan Tile",
     "description": "Decorative Moroccan style patterned tile",
-    "image": "https://images.unsplash.com/photo-1615873968403-89e068629265",
+    "image": "https://images.unsplash.com/photo-1701251786408-d0320ecaad8d?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "category": "decorative",
     "price": 65.20,
     "currency": "USD",
@@ -75,7 +75,7 @@
     "id": "tile_007",
     "title": "Beige Travertine Tile",
     "description": "Natural travertine tile with warm beige tones",
-    "image": "https://images.unsplash.com/photo-1616594039964-ae9021a400a0",
+    "image": "https://images.unsplash.com/photo-1628602813576-3783a0394e8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTR8fHRpbGVzfGVufDB8fDB8fHww",
     "category": "stone",
     "price": 72.30,
     "currency": "USD",
@@ -87,7 +87,7 @@
     "id": "tile_008",
     "title": "Glossy Subway Tile",
     "description": "Classic white glossy subway wall tile",
-    "image": "https://images.unsplash.com/photo-1604147706283-d7119b5b822c",
+    "image": "https://images.unsplash.com/photo-1521783593447-5702b9bfd267?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE4fHx0aWxlc3xlbnwwfHwwfHx8MA%3D%3D",
     "category": "ceramic",
     "price": 39.99,
     "currency": "USD",
@@ -144,3 +144,4 @@
     "inStock": true
   }
 ]
+
