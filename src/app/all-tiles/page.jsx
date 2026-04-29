@@ -2,7 +2,7 @@ import TilesCard from "@/components/TilesCard";
 import Image from "next/image";
 
 const allTilespage = async() => {
-    const res = await fetch("http://localhost:3000/data.json")
+    const res = await fetch("https://tiles-gallery-nine.vercel.app/data.json")
     const tiles = await res.json();
     console.log(tiles);
     
