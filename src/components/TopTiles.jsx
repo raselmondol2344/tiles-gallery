@@ -3,7 +3,7 @@ import Image from "next/image";
 
 
 const TopTiles = async() => {
-    const res = await fetch("https://tiles-gallery-nine.vercel.app/data.json")
+    const res = await fetch("https://tiles-gallery-akho.vercel.app/data.json")
     const tiles = await res.json();
     const tiless = tiles.slice(0,4)
    // console.log(tiless);

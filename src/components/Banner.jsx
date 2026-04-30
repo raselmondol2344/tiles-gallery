@@ -5,7 +5,7 @@ const Banner = () => {
     return (
 
         <div
-            className="hero min-h-[450px]"style={{
+            className="hero min-h-[450px] mb-10"style={{
                 backgroundImage:"url(/bannarImage.jpg)",
             }}
         >
