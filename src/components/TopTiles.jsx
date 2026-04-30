@@ -10,7 +10,7 @@ const TopTiles = async() => {
     return (
         <div className="max-w-7xl mx-auto">
             <h1 className="text-2xl font-bold m-10">Featured Tiles</h1>
-            <div className="grid grid-cols-3 gap-5 mb-20">
+            <div className="grid md:grid-cols-2  lg:grid-cols-3 gap-5 mb-20">
                 {
                     tiless.map(tiles=> <TilesCard key={tiles.id} tiles={tiles}></TilesCard>)
                 }
