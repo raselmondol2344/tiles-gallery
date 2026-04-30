@@ -4,12 +4,14 @@ import Link from "next/link";
 import { url } from "better-auth";
 import { authClient } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
+import { FcGoogle } from "react-icons/fc";
 
 
 
 
 const registerpage = () => {
-
+    
+     
     const router = useRouter();
     const { register, handleSubmit, formState: { errors }, } = useForm()
 
@@ -39,7 +41,16 @@ const registerpage = () => {
             alert("signUp sucessfull")
             router.push("/logIn");
          }
+
+         
     }
+    const handleSocialSignUp = async () => {
+        const data = await authClient.signUp.social({
+            provider: "google",
+        });
+
+    };
+
 
 
 
@@ -87,6 +98,8 @@ const registerpage = () => {
 
                 </form>
                 <p>alrady have a account ! <Link href={'/logIn'} className="text-blue-500">Login</Link></p>
+                <h1 className="font-sm text-lg text-center mb-5">or</h1>
+                <button onClick={handleSocialSignUp} className="btn btn-outline border-blue-300 w-full rounded-full text-gray-600"> <FcGoogle />login with google</button>
             </div>
         </div>
     );

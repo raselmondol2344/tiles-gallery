@@ -8,7 +8,7 @@ const TilesCard = ({ tiles }) => {
     console.log(tiles);
     return (
         <div>
-            <div className="card bg-base-200  shadow-lg border border-gray-100">
+            <div className="card bg-base-200  shadow-lg border border-gray-100 ">
                 <figure className="relative w-full aspect-square">
                    <Image
                    src ={tiles.image}
