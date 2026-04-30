@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 
 
 
+
 const registerpage = () => {
 
     const router = useRouter();
@@ -27,7 +28,7 @@ const registerpage = () => {
             image: photo_url,
             callbackURL: '/logIn',
         });
-        
+
 
          console.log(res,error);
 
