@@ -27,6 +27,7 @@ const registerpage = () => {
             image: photo_url,
             callbackURL: '/logIn',
         });
+        
 
          console.log(res,error);
 
