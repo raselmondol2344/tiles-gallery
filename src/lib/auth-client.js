@@ -4,4 +4,4 @@ export const authClient = createAuthClient({
     baseURL: "https://tiles-gallery-akho.vercel.app"
 })
 
-export const { signIn, signUp, useSession } = createAuthClient()
+// export const { signIn, signUp, useSession } = createAuthClient()
