@@ -8,6 +8,7 @@ const db = client.db("tiles_gallery");
 
 
 export const auth = betterAuth({
+  baseURL: process.env.BETTER_AUTH_URL || "http://localhost:3000",
 
   database: mongodbAdapter(db, {
     // Optional: if you don't provide a client, database transactions won't be enabled.
