@@ -45,7 +45,7 @@ const registerpage = () => {
          
     }
     const handleSocialSignUp = async () => {
-        const data = await authClient.signUp.social({
+        const data = await authClient.signIn.social({
             provider: "google",
         });
 
