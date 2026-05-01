@@ -8,18 +8,19 @@ const TilesCard = ({ tiles }) => {
     console.log(tiles);
     return (
         <div>
-            <div className="card bg-base-200  shadow-lg border border-gray-100 ">
-                <figure className="relative w-full aspect-square">
+            <div className="card bg-base-200 shadow-lg border border-gray-100 p-2 md:p-4">
+                <figure className="relative w-full aspect-[4/3] md:aspect-square">
                    <Image
                    src ={tiles.image}
                    fill
                    alt={tiles.title}
+                   className="object-cover rounded-lg"
                    />
                 </figure>
-                <div className="card-body">
+                <div className="card-body p-2 md:p-4 ">
 
                    <div className="flex  justify-between gap-2">
-                     <h2 className="card-title font-bold ">{tiles.title}</h2>
+                     <h2 className="card-title font-bold text-sm md:text-base">{tiles.title}</h2>
                     <button
                     className={` font-semibold text-sm p-1 rounded-lg ${
                         tiles.category === "ceramic"
@@ -45,9 +46,11 @@ const TilesCard = ({ tiles }) => {
                     </button>
                    </div>
 
-                   <p className="font-semibold text-lg">${tiles.price}</p>
+                   <p className="font-semibold text-base md:text-lg">${tiles.price}</p>
                     <div className="card-actions justify-center">
-                       <Link className="w-full" href={`/all-tiles/${tiles.id}`}> <button className="btn font-bold bg-gray-500 text-white w-full rounded-full mt-4">View Details</button></Link>
+                       <Link className="w-full" href={`/all-tiles/${tiles.id}`}> <button className="btn font-bold bg-gray-500 text-white 
+                            w-full rounded-full mt-2 md:mt-4 
+                            text-sm md:text-base py-2 md:py-3">View Details</button></Link>
                     </div>
                 </div>
             </div>
