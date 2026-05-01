@@ -1,14 +1,8 @@
-// import { createAuthClient } from "better-auth/react"
-// export const authClient = createAuthClient({
-//     /** The base URL of the server (optional if you're using the same domain) */
-//     baseURL: "https://tiles-gallery-akho.vercel.app"
-// })
-
-// export const { signIn, signUp, useSession } = createAuthClient()
-
 import { createAuthClient } from "better-auth/react"
 export const authClient = createAuthClient({
-    baseURL: process.env.NEXT_PUBLIC_BETTER_AUTH_URL || "http://localhost:3000"
+    /** The base URL of the server (optional if you're using the same domain) */
+    baseURL: "https://tiles-gallery-akho.vercel.app"
 })
 
-export const { signIn, signUp, useSession, signOut } = authClient;
+export const { signIn, signUp, useSession } = createAuthClient()
+
