@@ -10,8 +10,8 @@ import { FcGoogle } from "react-icons/fc";
 
 
 const registerpage = () => {
-    
-     
+
+
     const router = useRouter();
     const { register, handleSubmit, formState: { errors }, } = useForm()
 
@@ -32,17 +32,17 @@ const registerpage = () => {
         });
 
 
-         console.log(res,error);
+        console.log(res, error);
 
-         if(error){
+        if (error) {
             alert(error.message)
-         }
-         if(res){
+        }
+        if (res) {
             alert("signUp sucessfull")
             router.push("/logIn");
-         }
+        }
 
-         
+
     }
     const handleSocialSignUp = async () => {
         const data = await authClient.signIn.social({
@@ -55,53 +55,65 @@ const registerpage = () => {
 
 
     return (
-        <div className="container mx-auto  flex justify-center items-center">
-            <div className=" rounded-xl bg-slate-200 py-10 px-20 mt-10 ">
-                <h2 className="font-semibold text-lg mb-5">Create a account </h2>
-                <form className="space-y-5" onSubmit={handleSubmit(handleRegisterdatafun)}>
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-300 px-3 sm:px-4">
+            <div className=" w-full max-w-sm sm:max-w-md bg-white shadow-lg sm:shadow-xl rounded-xl sm:rounded-2xl p-5 sm:p-8 border border-gray-200 ">
+                <h2 className="text-xl sm:text-2xl font-bold text-center mb-5 text-gray-700">Create a account </h2>
+                <form className="space-y-3 sm:space-y-4" onSubmit={handleSubmit(handleRegisterdatafun)}>
 
                     <fieldset className="fieldset ">
 
-                        <legend className="fieldset-legend">Name</legend>
-                        <input type="text" className="input" placeholder="Enter your name" {...register("name", { required: "provite a valid name" })} />
+                        <legend className=" block text-xs sm:text-sm font-medium text-gray-600 mb-1">Name</legend>
+                        <input type="text" className="input w-full px-3 py-2 text-sm border rounded-md sm:rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your name" {...register("name", { required: "provite a valid name" })} />
                         {
                             errors.name && <p className="text-red-500">{errors.name.message}</p>
                         }
 
 
-                        <legend className="fieldset-legend">photo URL</legend>
-                        <input type="text" className="input" placeholder="Enter your photo url" {...register("photo_url", { required: "provite a valid photo url" })} />
+                        <legend className="block text-xs sm:text-sm font-medium text-gray-600 mb-1">photo URL</legend>
+                        <input type="text" className="input w-full px-3 py-2 text-sm border rounded-md sm:rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your photo url" {...register("photo_url", { required: "provite a valid photo url" })} />
                         {
-                            errors.photo_url && <p className="text-red-500">{errors.photo_url.message}</p>
+                            errors.photo_url && <p className=" text-red-500 text-xs mt-1">{errors.photo_url.message}</p>
                         }
 
 
 
 
 
-                        <legend className="fieldset-legend">Email</legend>
-                        <input type="email" className="input" placeholder="Enter your email" {...register("email", { required: "provite a valid email" })} />
+                        <legend className="block text-xs sm:text-sm font-medium text-gray-600 mb-1">Email</legend>
+                        <input type="email" className="input w-full px-3 py-2 text-sm border rounded-md sm:rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your email" {...register("email", { required: "provite a valid email" })} />
                         {
                             errors.email && <p className="text-red-500">{errors.email.message}</p>
                         }
 
 
 
-                        <legend className="fieldset-legend">Password</legend>
-                        <input type="password" className="input" placeholder="Enter your password" {...register("password", { required: "provite a valid password" })} />
+                        <legend className="block text-xs sm:text-sm font-medium text-gray-600 mb-1">Password</legend>
+                        <input type="password" className="input w-full px-3 py-2 text-sm border rounded-md sm:rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Enter your password" {...register("password", { required: "provite a valid password" })} />
                         {
                             errors.password && <p className="text-red-500">{errors.password.message}</p>
                         }
 
-                        <button className="btn btn-neutral mt-4">create your account</button>
+                        <button className="w-full bg-blue-500 hover:bg-blue-600 text-white py-2 text-sm sm:text-base rounded-md sm:rounded-lg font-semibold transition">create your account</button>
                     </fieldset>
 
                 </form>
-                <p>alrady have a account ! <Link href={'/logIn'} className="text-blue-500">Login</Link></p>
-                <h1 className="font-sm text-lg text-center mb-5">or</h1>
-                <button onClick={handleSocialSignUp} className="btn btn-outline border-blue-300 w-full rounded-full text-gray-600"> <FcGoogle />login with google</button>
+                <p className="text-center text-xs sm:text-sm text-gray-600 mt-4">
+                    Already have an account?{" "}
+                    <Link href={"/logIn"} className="text-blue-500 hover:underline">
+                        Login
+                    </Link>
+                </p>
+                <div className="flex items-center gap-2 my-4">
+                <hr className="flex-1 border-gray-300" />
+                <span className="text-gray-400 text-xs">OR</span>
+                <hr className="flex-1 border-gray-300" />
+                </div>
+                
+                <button onClick={handleSocialSignUp} className="w-full flex items-center justify-center gap-2 border border-gray-300 py-2 text-sm rounded-md sm:rounded-lg hover:bg-gray-100 transition"> <FcGoogle />login with google</button>
             </div>
         </div>
+
+
     );
 };
 
