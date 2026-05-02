@@ -1,7 +1,7 @@
 import Marquee from "react-fast-marquee";
 
 const Marqueesection = async() => {
-     const res = await fetch("https://tiles-gallery-lry3.vercel.app/data.json")
+     const res = await fetch("https://tiles-gallery-lztd.vercel.app/data.json")
     const tiles = await res.json();
     return (
         

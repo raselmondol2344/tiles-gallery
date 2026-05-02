@@ -5,7 +5,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const tilesDetaispage = async ({ params }) => {
     const { id } = await params;
-    const res = await fetch("https://tiles-gallery-lry3.vercel.app/data.json")
+    const res = await fetch("https://tiles-gallery-lztd.vercel.app/data.json")
     const tiless = await res.json();
     const tiles = tiless.find(t => t.id == id)
     console.log(tiles);

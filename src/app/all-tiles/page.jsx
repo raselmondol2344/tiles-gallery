@@ -13,7 +13,7 @@ const AllTilesPage = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await fetch("https://tiles-gallery-lry3.vercel.app/data.json");
+                const res = await fetch("https://tiles-gallery-lztd.vercel.app/data.json");
                 const data = await res.json();
                 setTiles(data);
             } catch (error) {
