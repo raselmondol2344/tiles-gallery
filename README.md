@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project Name 
+ Tiles Gallery
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+Tiles Gallery is a web-based tiles selling platform designed to provide a clean and responsive user experience. Users can easily browse tiles, create an account, and explore available products.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Purpose
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The purpose of this project is to build a simple and functional tiles selling website where users can:
 
-## Learn More
+* Browse different types of tiles
+* Register and log in to their account
+* View all available tiles in an organized way
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Live URL
 
-## Deploy on Vercel
+https://tiles-gallery-lztd.vercel.app
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Key Features
+
+* Login Page
+* Register Page
+* Home Page
+* All Tiles Page
+
+---
+
+## Technology
+
+* HTML
+* Tailwind CSS
+* React JS
+* Next.js
+* MongoDB
+* DaisyUI
+* Hero UI
